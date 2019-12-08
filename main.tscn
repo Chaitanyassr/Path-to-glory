@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Spatial.tscn" type="PackedScene" id=1]
+[ext_resource path="res://walls.tscn" type="PackedScene" id=2]
+[ext_resource path="res://KinematicBody.tscn" type="PackedScene" id=3]
+
+[node name="main" type="Spatial"]
+
+[node name="land" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="Spatial" parent="land" instance=ExtResource( 1 )]
+transform = Transform( 0.998425, 0, -0.0561025, 0, 1, 0, 0.0561025, 0, 0.998425, -23.9211, 3.93028, -4.45789 )
+
+[node name="walls" parent="land" instance=ExtResource( 2 )]
+transform = Transform( 0.669804, 0, -0.742538, 0, 1, 0, 0.742538, 0, 0.669804, 6.36221, 1.81705, 6.1426 )
+
+[node name="walls5" parent="land" instance=ExtResource( 2 )]
+transform = Transform( 0.998577, 0.0291002, 0.0447003, -0.0266855, 0.998201, -0.0536959, -0.0461823, 0.0524266, 0.997556, -14.6776, 5.49003, -3.92425 )
+
+[node name="walls9" parent="land" instance=ExtResource( 2 )]
+transform = Transform( -0.837471, 0.542325, -0.0672731, -0.488057, -0.797629, -0.354385, -0.245851, -0.263954, 0.932677, -8.1948, 7.02574, 0.833622 )
+
+[node name="walls3" parent="land" instance=ExtResource( 2 )]
+transform = Transform( 0.559033, -0.368944, -0.742538, 0.550824, 0.834621, 0, 0.619738, -0.409008, 0.669804, -4.69936, 0.9352, -6.49881 )
+
+[node name="walls6" parent="land" instance=ExtResource( 2 )]
+transform = Transform( 0.849462, -0.525752, 0.0447003, 0.52756, 0.847819, -0.0536959, -0.00966688, 0.0691947, 0.997556, -31.4865, 5.07159, -3.44784 )
+
+[node name="walls11" parent="land" instance=ExtResource( 2 )]
+transform = Transform( -0.400246, 0.913935, -0.0672731, -0.846696, -0.396885, -0.354385, -0.350584, -0.0848811, 0.932677, 5.41001, 16.0163, 4.95909 )
+
+[node name="walls2" parent="land" instance=ExtResource( 2 )]
+transform = Transform( 0.692834, -0.0725686, 0.717436, 0.107419, 0.994209, -0.00317183, -0.713051, 0.0792642, 0.696617, 6.08405, 1.15058, -5.79383 )
+
+[node name="walls8" parent="land" instance=ExtResource( 2 )]
+transform = Transform( -0.10653, 0.0439488, 0.993338, 0.162241, 0.986402, -0.0262425, -0.980984, 0.158365, -0.112212, -24.0818, 5.48446, -11.3108 )
+
+[node name="walls10" parent="land" instance=ExtResource( 2 )]
+transform = Transform( 0.179769, 0.523404, -0.832906, 0.297811, -0.835923, -0.461022, -0.937546, -0.165171, -0.306148, -0.45355, 14.7342, -4.0298 )
+
+[node name="walls4" parent="land" instance=ExtResource( 2 )]
+transform = Transform( 0.692834, -0.0725686, 0.717436, 0.107419, 0.994209, -0.00317183, -0.713051, 0.0792642, 0.696617, -5.10602, 1.92367, 6.57809 )
+
+[node name="walls7" parent="land" instance=ExtResource( 2 )]
+transform = Transform( -0.10653, 0.0439488, 0.993338, 0.162241, 0.986402, -0.0262425, -0.980984, 0.158365, -0.112212, -21.6284, 5.31989, 5.20691 )
+
+[node name="walls12" parent="land" instance=ExtResource( 2 )]
+transform = Transform( 0.179769, 0.523404, -0.832906, 0.297811, -0.835923, -0.461022, -0.937546, -0.165171, -0.306148, -2.56728, 7.4107, 10.8288 )
+
+[node name="land2" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="Spatial" parent="land2" instance=ExtResource( 1 )]
+transform = Transform( 0.998425, 0, -0.0561025, 0, 1, 0, 0.0561025, 0, 0.998425, 0, 0, 0 )
+
+[node name="walls" parent="land2" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.86593, 1.81705, 0 )
+
+[node name="walls3" parent="land2" instance=ExtResource( 2 )]
+transform = Transform( 0.834621, -0.550824, 0, 0.550824, 0.834621, 0, 0, 0, 1, -8.03888, 0.9352, -0.514996 )
+
+[node name="walls2" parent="land2" instance=ExtResource( 2 )]
+transform = Transform( -0.0654038, 0.0102499, 0.997806, 0.107419, 0.994209, -0.00317183, -0.99206, 0.106976, -0.066126, -0.292627, 1.15058, -8.04988 )
+
+[node name="walls4" parent="land2" instance=ExtResource( 2 )]
+transform = Transform( -0.0654038, 0.0102499, 0.997806, 0.107419, 0.994209, -0.00317183, -0.99206, 0.106976, -0.066126, 1.39883, 1.92367, 8.54593 )
+
+[node name="KinematicBody" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-008, 1, -4.37114e-008, 0, -4.37114e-008, -1, -1, -4.37114e-008, 1.91069e-015, 0, 2.4313, 0 )
